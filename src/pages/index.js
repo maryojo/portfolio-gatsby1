@@ -1,12 +1,25 @@
 import * as React from 'react'
 import Layout from '../components/layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import GridLayout from '../components/grid-layout'
+import Card from '../components/card'
+import { dynamicIntro } from '../components/styles/work.module.css'
 
 const IndexPage = () => {
   return (
    <Layout pageTitle="Homepage">
-    <p>Page content here</p>
-    <StaticImage src="https://pbs.twimg.com/media/E1oMV3QVgAIr1NT?format=jpg&name=large" alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"></StaticImage>
+    <section>
+      <h1>Nice to have you here!</h1>
+      <p>I love to <span className={dynamicIntro}>design</span> interfaces</p>
+      <p>I am currently working on <span className={dynamicIntro}>this</span></p>
+    </section>
+    <GridLayout>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+      <Card></Card>
+    </GridLayout>
    </Layout>
   )
 }

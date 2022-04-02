@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { gridLayout } from './layout.module.css'
+import { gridLayout } from './styles/layout.module.css'
 
 
 const GridLayout = ({children}) =>{

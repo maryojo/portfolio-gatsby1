@@ -1,0 +1,15 @@
+.primary-button{
+  background-color: blue;
+  color: white;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.secondary-button{
+  border: 1px solid blue;
+  color: blue;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+}

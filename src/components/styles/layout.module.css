@@ -1,0 +1,41 @@
+*{
+    font-family: "DM Sans", sans-serif;
+}
+
+body{
+  padding: 3em;
+  padding-top: 1.5em;
+}
+
+.primary-color{
+  color: #C4D6B0;
+  background-color: #C4D6B0;
+}
+
+.secondary-color{
+  color: #F95D67;
+}
+
+.container {
+  /* background-color: #F95D67; */
+  /* margin: auto; */
+  /* max-width: 500px; */
+}
+
+.heading {
+  color: rebeccapurple;
+}
+
+
+.site-title {
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
+  margin: 3rem 0;
+}
+
+.grid-layout{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 3em;
+}

@@ -4,9 +4,10 @@ import {
   container,
   heading, 
   siteTitle,
- } from './layout.module.css'
- import Navbar from './navbar'
- import Footer from './footer'
+ } from './styles/layout.module.css'
+import "@fontsource/dm-sans"
+import Navbar from './navbar'
+import Footer from './footer'
 
 
 const Layout = ({pageTitle, children}) =>{
@@ -22,10 +23,10 @@ const Layout = ({pageTitle, children}) =>{
   return(
     <div className={container}>
       <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-      <header className={siteTitle}>{data.site.siteMetadata.title}</header>
+      {/* <header className={siteTitle}>{data.site.siteMetadata.title}</header> */}
       <Navbar></Navbar>
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
+        {/* <h1 className={heading}>{pageTitle}</h1> */}
         {children}
       </main>
       <Footer></Footer>
