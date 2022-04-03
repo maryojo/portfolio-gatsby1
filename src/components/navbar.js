@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import {
   navLinks,
@@ -7,6 +7,7 @@ import {
   rightNavItems,
 } from './styles/navbar.module.css'
 import { StaticImage } from 'gatsby-plugin-image'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
 
 
@@ -16,12 +17,16 @@ const Navbar = () =>{
       <ul className={navLinks}>
         <li>
         <Link to="/">
-          <StaticImage src="../images/logo.png" height={50}></StaticImage>
+          <StaticImage src="../images/logo.png" height={45}></StaticImage>
         </Link>
         </li>
         <div className={rightNavItems}>
         <li className={navLinkItem}>
-          <Link to="/" className={navLinkText}>Work</Link>
+          <Link to="/" className={navLinkText}>
+          <FaChevronLeft fontWeight={12}/>
+          Work
+          <FaChevronRight/>
+          </Link>
         </li>
         <li className={navLinkItem}>
           <Link to="/etc" className={navLinkText}>Etc.</Link>

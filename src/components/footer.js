@@ -1,10 +1,13 @@
-import * as React from 'react'
+import React from 'react'
+import '../components/styles/layout.module.css'
+// import {FacebookIcon} from 'gatsby-plugin-social9-socialshare'
+import SocialIcons from './social-icons'
 
 const Footer = () =>{
   return(
     <footer>
       <div>Copyright</div>
-      <div>LinkedIn, Behance, Github, Twitter</div>
+        <SocialIcons></SocialIcons>
     </footer>
   )
 }

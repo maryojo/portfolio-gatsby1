@@ -1,0 +1,10 @@
+.about-section{
+  display: flex;
+  text-align: left;
+}
+
+.display-picture{
+  border-radius: 50%;
+  height: 17em;
+  width: 17em;
+}
